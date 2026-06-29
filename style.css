@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow:hidden;
+    font-family:Segoe UI,sans-serif;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.code-container{
+    width:80%;
+    max-width:900px;
+}
+
+#code{
+    color:#00ff88;
+    font-size:1.2rem;
+    text-align:left;
+    white-space:pre-wrap;
+    line-height:1.8;
+}
+
+.hidden{
+    display:none;
+}
+
+.profile{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid gold;
+    margin-bottom:20px;
+    box-shadow:0 0 40px gold;
+    animation:float 4s ease-in-out infinite;
+}
+
+h1{
+    font-size:4rem;
+    color:gold;
+}
+
+h2{
+    font-size:2rem;
+    margin:15px 0;
+}
+
+.message{
+    font-size:1.4rem;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.developer{
+    margin-top:20px;
+    color:#00d9ff;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:50px;
+    font-size:1rem;
+}
+
+#output{
+    margin-top:25px;
+    font-size:1.5rem;
+    color:#00ff88;
+}
+
+#particles{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.particle{
+    position:absolute;
+    width:8px;
+    height:8px;
+    background:gold;
+    border-radius:50%;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px);
+    }
+
+    to{
+        transform:translateY(120vh);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
