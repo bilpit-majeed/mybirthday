@@ -52,10 +52,51 @@ typeCode();
 document.getElementById("celebrateBtn")
 .addEventListener("click",()=>{
 
-    document.getElementById("output").innerHTML=`
-        🎂 Happy Birthday To Me! <br>
-        Thank You Allah For Another Year.
+    document.getElementById("celebrateBtn")
+.addEventListener("click", () => {
+
+    document.getElementById("output").innerHTML = `
+
+    <h2>🎉 HAPPY BIRTHDAY TO ME 🎉</h2>
+
+    <p>
+        Today I celebrate another year of life,
+        growth, learning, and countless blessings.
+    </p>
+
+    <p>
+        Alhamdulillah for the journey so far,
+        for every challenge that made me stronger,
+        and for every opportunity that helped me grow.
+    </p>
+
+    <p>
+        As I step into this new chapter,
+        I pray for wisdom, success,
+        happiness, good health,
+        and endless blessings.
+    </p>
+
+    <p>
+        May my dreams become reality,
+        may my hard work bear fruit,
+        and may I continue to inspire others
+        through technology and creativity.
+    </p>
+
+    <h3>
+        🎂 Happy Birthday, BILPIT MAJEED MOSES 🎂
+    </h3>
+
+    <p>
+        Web Developer • AI Prompt Engineer • Dream Chaser
+    </p>
+
+    <h2 style="color:gold;">
+        THE JOURNEY CONTINUES 🚀
+    </h2>
     `;
+});
 });
 
 function createParticles(){
