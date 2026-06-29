@@ -7,7 +7,8 @@
 body{
     background:#050816;
     color:white;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     font-family:Segoe UI,sans-serif;
 }
 
@@ -129,5 +130,44 @@ button{
 
     100%{
         transform:translateY(0);
+    }
+}
+
+.birthday-content{
+    padding:20px;
+    width:100%;
+    max-width:100%;
+}
+
+@media(max-width:768px){
+
+    .profile{
+        width:180px;
+        height:180px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    .message{
+        font-size:1rem;
+        padding:0 15px;
+    }
+
+    .developer{
+        font-size:0.9rem;
+    }
+
+    button{
+        width:90%;
+        max-width:300px;
+        padding:15px;
+        font-size:1rem;
+        margin-bottom:30px;
     }
 }
